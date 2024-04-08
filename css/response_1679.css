@@ -1,0 +1,441 @@
+@media print,
+(max-width: 1679px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+
+
+
+    /*--------------
+        ButtonUp
+    --------------*/
+    .buttonUp
+    {
+        right: 40px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .logo
+    {
+        top: -32px;
+        left: 0;
+
+        margin-left: 0;
+    }
+
+
+    header .logo img
+    {
+        width: 268px;
+    }
+
+
+
+    header .data
+    {
+        padding-left: 248px;
+    }
+
+
+
+    header .links > * + *
+    {
+        margin-left: 24px;
+    }
+
+
+
+    header .callback_btn
+    {
+        margin-left: 24px;
+    }
+
+
+
+    header .search
+    {
+        width: calc(100% - 595px);
+    }
+
+
+
+    header .btns
+    {
+        width: 440px;
+    }
+
+
+
+    header .menu_item + .menu_item
+    {
+        margin-left: 60px;
+    }
+
+
+    header .catalog .mini_modal .scroll
+    {
+        max-height: calc(100vh - 202px);
+    }
+
+    .no_top_banner header .catalog .mini_modal .scroll
+    {
+        max-height: calc(100vh - 162px);
+    }
+
+    header.fixed .catalog .mini_modal .scroll
+    {
+        max-height: calc(100vh - 70px);
+    }
+
+
+
+    header .catalog .list
+    {
+        width: 340px;
+    }
+
+
+    header .catalog .sub
+    {
+        width: calc(100% - 340px);
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block hr
+    {
+        width: calc(100% + 80px);
+        margin: 60px -40px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider
+    {
+        width: calc(100% - 460px);
+    }
+
+
+
+    /*--------------------
+        Banenrs slider
+    --------------------*/
+    .banners_slider
+    {
+        width: 440px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .map
+    {
+        height: 520px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .row > *
+    {
+        width: calc(25% - 20px);
+    }
+
+
+    .content .products .row > *
+    {
+        width: calc(33.333% - 20px);
+    }
+
+
+
+    .products .list .product .data
+    {
+        width: calc(100% - 588px);
+    }
+
+
+    .products .list .product .features
+    {
+        width: 280px;
+    }
+
+
+    .products .list .product .features .val
+    {
+        width: calc(100% - 164px);
+        margin-left: 20px;
+    }
+
+
+    .products .list .product .features + .features .label
+    {
+        width: 106px;
+    }
+
+
+    .products .list .product .features + .features .val
+    {
+        width: calc(100% - 126px);
+        margin-left: 20px;
+    }
+
+
+    .products .list .product .col_right
+    {
+        margin-right: 0;
+    }
+
+
+
+    .content .products .list .product .prices
+    {
+        width: 100%;
+    }
+
+
+    .content .products .list .product .amount
+    {
+        margin-top: 16px;
+    }
+
+
+    .content .products .list .product .prices.total
+    {
+        align-self: center;
+
+        width: auto;
+        margin-top: 16px;
+        margin-left: 20px;
+    }
+
+
+    .content .products .list .product .features
+    {
+        width: 268px;
+    }
+
+    .content .products .list .product .features + .features
+    {
+        margin-right: -170px;
+        margin-left: 40px;
+    }
+
+
+
+    /*------------
+        Brands
+    ------------*/
+    .brands .brand
+    {
+        min-height: 163px;
+        padding: 39px 9px 19px;
+    }
+
+
+    .brands .brand .logo
+    {
+        height: 61px;
+        margin-bottom: 7px;
+    }
+
+
+
+    /*------------------------
+        Photo gallery page
+    ------------------------*/
+    .photo_gallery_page .item .thumb
+    {
+        height: 220px;
+    }
+
+    .photo_gallery_page .item.big_h .thumb
+    {
+        height: 440px;
+    }
+
+    .photo_gallery_page .item.big_w .thumb,
+    .photo_gallery_page .item.middle_w .thumb
+    {
+        height: 520px;
+    }
+
+
+    .photo_gallery_page .item .title
+    {
+        padding: 24px;
+    }
+
+
+
+    /*---------------
+        Cart info
+    ---------------*/
+    .cart_info .col_price
+    {
+        width: 200px;
+        min-width: 200px;
+    }
+
+
+    .cart_info .col_total_price
+    {
+        width: 112px;
+        min-width: 112px;
+    }
+
+
+
+    .cart_info .cart_total
+    {
+        padding: 20px 32px;
+    }
+
+
+
+    /*-------------------
+        Checkout info
+    -------------------*/
+    .checkout_info .section ~ .section
+    {
+        width: 340px;
+    }
+
+    .checkout_info .section.total
+    {
+        width: 313px;
+    }
+
+
+
+    /*-------------------
+        Products head
+    -------------------*/
+    .products_head .sort
+    {
+        width: 285px;
+    }
+
+
+    .products_head .pagination
+    {
+        display: none;
+    }
+
+
+    .products_head .view
+    {
+        margin-left: auto;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .images
+    {
+        width: calc(100% - 825px);
+    }
+
+
+    .product_info .data
+    {
+        width: 400px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .top
+    {
+        padding: 40px 0 50px;
+    }
+
+
+
+    footer .help > div
+    {
+        width: 100%;
+    }
+
+
+    footer .help .btn
+    {
+        margin-top: 16px;
+        margin-left: 0;
+    }
+
+
+
+    footer .subscribe > div
+    {
+        width: 100%;
+    }
+
+
+    footer .subscribe .desc
+    {
+        width: 488px;
+        max-width: 100%;
+    }
+
+
+    footer .subscribe form
+    {
+        width: 446px;
+        max-width: 100%;
+        margin-top: 16px;
+    }
+
+
+
+    footer .links
+    {
+        margin-left: 60px;
+    }
+
+    footer .links + .links
+    {
+        margin-left: 80px;
+    }
+
+
+
+    footer .contacts
+    {
+        width: 432px;
+    }
+
+
+
+    footer .copyright
+    {
+        width: 190px;
+    }
+
+
+
+    footer .exp
+    {
+        max-width: calc(100% - 250px);
+        margin-left: 60px;
+    }
+}

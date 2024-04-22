@@ -186,6 +186,16 @@
 
 
 
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .link img
+    {
+        height: 123px;
+    }
+
+
+
     /*-------------------
         Contacts info
     -------------------*/
@@ -205,13 +215,6 @@
         width: 100%;
         margin-top: 8px;
         margin-left: 0;
-    }
-
-
-
-    .contacts_info .map
-    {
-        display: none;
     }
 
 
@@ -455,9 +458,28 @@
         LK info - Personal
     ------------------------*/
     .lk_info .personal .data,
-    .lk_info .personal .btns
+    .lk_info .personal .btns > *
     {
         padding: 16px;
+    }
+
+
+    .lk_info .personal .company .val
+    {
+        display: block;
+
+        margin-left: 0;
+    }
+
+    .lk_info .personal .company .val > *
+    {
+        margin-left: 0;
+    }
+
+
+    .lk_info .personal .company .sep
+    {
+        display: none;
     }
 
 
@@ -657,16 +679,23 @@
     }
 
 
+    .products_head .mob_filter_btn.no_m
+    {
+        margin-bottom: 0;
+    }
+
+
     .products_head .sort,
     .products_head .limit
     {
-        width: 100%;
+        width: calc(50% - 8px);
     }
 
 
     .products_head .limit
     {
-        margin-top: 16px;
+        margin-top: 0;
+        margin-left: auto;
     }
 
 

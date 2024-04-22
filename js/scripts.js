@@ -26,7 +26,11 @@ document.addEventListener('DOMContentLoaded', function () {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev'
 			},
-			lazy: true
+			lazy: true,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false
+			}
 		})
 	}
 
@@ -800,6 +804,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
 				let anchor = element.getAttribute('data-anchor')
 
+				if($('.tabs .btn[data-content="#'+ anchor +'"]').length) {
+					let activeTab = $('.tabs .btn[data-content="#'+ anchor +'"]'),
+						parent = activeTab.closest('.tabs_container')
+
+					parent.find('.tabs .btn').removeClass('active')
+					parent.find('.tab_content').removeClass('active')
+
+					activeTab.addClass('active')
+					$('#' + anchor).addClass('active')
+				}
+
 				document.getElementById(anchor).scrollIntoView({
 					behavior: 'smooth',
 					block: 'start'
@@ -810,12 +825,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 	// Filter
-	$('.products_head .mob_filter_btn, aside .mob_filter_close_btn, .overlay').click(function(e) {
+	$('.products_head .mob_filter_btn, .mob_filter_close_btn, .overlay').click(function(e) {
 		e.preventDefault()
 
-		$('aside').toggleClass('show')
+		$('.filter_wrap').toggleClass('show')
 
-		$('aside').hasClass('show')
+		$('.filter_wrap').hasClass('show')
 			? $('.overlay').fadeIn(200)
 			: $('.overlay').fadeOut(200)
 	})
@@ -952,6 +967,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		$('.products .grid_view').hide()
 		$('.products .list_view').fadeIn(300)
+	})
+
+
+	// Checkout info
+	$('#reg_type').change(function() {
+		let form = $(this).closest('.form')
+
+		if ($(this).val() == 1) {
+			form.find('.reg_type2').hide()
+			form.find('.reg_type1').fadeIn(300)
+		}
+
+		if ($(this).val() == 2) {
+			form.find('.reg_type1').hide()
+			form.find('.reg_type2').fadeIn(300)
+		}
 	})
 })
 

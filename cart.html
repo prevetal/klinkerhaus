@@ -1153,7 +1153,7 @@
 												<svg class="icon"><use xlink:href="images/sprite.svg#ic_minus"></use></svg>
 											</button>
 
-											<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+											<input type="text" value="1" class="input" data-minimum="1" data-maximum="9999999" data-step="1" data-unit="" maxlength="7">
 
 											<button type="button" class="btn plus">
 												<svg class="icon"><use xlink:href="images/sprite.svg#ic_plus"></use></svg>
@@ -1215,7 +1215,7 @@
 											<svg class="icon"><use xlink:href="images/sprite.svg#ic_minus"></use></svg>
 										</button>
 
-										<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+										<input type="text" value="1" class="input" data-minimum="1" data-maximum="9999999" data-step="1" data-unit="" maxlength="7">
 
 										<button type="button" class="btn plus">
 											<svg class="icon"><use xlink:href="images/sprite.svg#ic_plus"></use></svg>
@@ -1314,7 +1314,7 @@
 												<svg class="icon"><use xlink:href="images/sprite.svg#ic_minus"></use></svg>
 											</button>
 
-											<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+											<input type="text" value="1" class="input" data-minimum="1" data-maximum="9999999" data-step="1" data-unit="" maxlength="7">
 
 											<button type="button" class="btn plus">
 												<svg class="icon"><use xlink:href="images/sprite.svg#ic_plus"></use></svg>
@@ -1378,7 +1378,7 @@
 											<svg class="icon"><use xlink:href="images/sprite.svg#ic_minus"></use></svg>
 										</button>
 
-										<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+										<input type="text" value="1" class="input" data-minimum="1" data-maximum="9999999" data-step="1" data-unit="" maxlength="7">
 
 										<button type="button" class="btn plus">
 											<svg class="icon"><use xlink:href="images/sprite.svg#ic_plus"></use></svg>
@@ -1472,7 +1472,7 @@
 												<svg class="icon"><use xlink:href="images/sprite.svg#ic_minus"></use></svg>
 											</button>
 
-											<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+											<input type="text" value="1" class="input" data-minimum="1" data-maximum="9999999" data-step="1" data-unit="" maxlength="7">
 
 											<button type="button" class="btn plus">
 												<svg class="icon"><use xlink:href="images/sprite.svg#ic_plus"></use></svg>
@@ -1534,7 +1534,7 @@
 											<svg class="icon"><use xlink:href="images/sprite.svg#ic_minus"></use></svg>
 										</button>
 
-										<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+										<input type="text" value="1" class="input" data-minimum="1" data-maximum="9999999" data-step="1" data-unit="" maxlength="7">
 
 										<button type="button" class="btn plus">
 											<svg class="icon"><use xlink:href="images/sprite.svg#ic_plus"></use></svg>
@@ -1626,10 +1626,16 @@
 
 								<div class="line">
 									<div class="field">
-										<select name="">
+										<select name="" id="reg_type">
 											<option value="1" selected>Я регистрируюсь как физическое лицо</option>
-											<option value="2">Вариант 2</option>
+											<option value="2">Я регистрируюсь как юридическое лицо</option>
 										</select>
+									</div>
+								</div>
+
+								<div class="line hide reg_type2">
+									<div class="field">
+										<input type="text" name="" value="" class="input" placeholder="Организация *">
 									</div>
 								</div>
 
@@ -1663,6 +1669,12 @@
 											<input type="tel" name="" value="" class="input" placeholder="Телефон *">
 										</div>
 									</div>
+
+									<div class="line hide reg_type2">
+										<div class="field">
+											<input type="text" name="" value="" class="input" placeholder="ИНН *">
+										</div>
+									</div>
 								</div>
 
 								<div class="exp">* — обязательные для заполнения поля.</div>
@@ -1682,7 +1694,7 @@
 										<div class="field">
 											<select name="">
 												<option value="1" selected>Самовывоз</option>
-												<option value="2">Вариант 2</option>
+												<option value="2">Доставка</option>
 											</select>
 										</div>
 									</div>
@@ -1723,8 +1735,6 @@
 
 								<div class="submit">
 									<button type="submit" class="submit_btn">ОФОРМИТЬ ЗАКАЗ</button>
-
-									<button class="invoice_btn">ВЫПИСАТЬ СЧЕТ</button>
 								</div>
 							</div>
 						</form>

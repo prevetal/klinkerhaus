@@ -324,6 +324,12 @@
     }
 
 
+    .page_desc.mob_hide
+    {
+        display: none;
+    }
+
+
     .page_head .share
     {
         margin-top: 20px;
@@ -419,18 +425,24 @@
     /*-----------------
         Main slider
     -----------------*/
-    .main_slider .data
-    {
-        width: 200px;
-        height: 165px;
-        padding: 16px;
-    }
-
-
     .main_slider .swiper-button-next,
     .main_slider .swiper-button-prev
     {
         display: none;
+    }
+
+
+    .main_slider .link img
+    {
+        height: 165px;
+    }
+
+
+    /* .main_slider .data
+    {
+        width: 200px;
+        height: 165px;
+        padding: 16px;
     }
 
 
@@ -472,7 +484,7 @@
         line-height: 12px;
 
         margin-top: 4px;
-    }
+    } */
 
 
 
@@ -920,13 +932,25 @@
     }
 
 
+    .lk_info .personal .company .address
+    {
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+
+
     .lk_info .personal .btns
     {
         width: 100%;
-        padding: 16px 20px;
 
         border: none;
         border-top: 1px solid #ececec;
+    }
+
+
+    .lk_info .personal .btns > *
+    {
+        padding: 16px 20px;
     }
 
 

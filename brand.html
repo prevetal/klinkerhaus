@@ -1106,7 +1106,7 @@
 					<div class="cont">
 						<div class="title">Файлы для скачивания</div>
 
-						<div class="list">
+						<div class="list row">
 							<div class="item">
 								<div class="icon">
 									<img src="images/ic_excel.svg" alt="" loading="lazy">
@@ -1119,12 +1119,6 @@
 
 									<div class="info">XLS, 4.27 Mb, 08.06.2020</div>
 								</div>
-
-								<button class="delete_btn">
-									<svg><use xlink:href="images/sprite.svg#ic_delete"></use></svg>
-
-									<span>Удалить файл</span>
-								</button>
 							</div>
 
 							<div class="item">
@@ -1139,12 +1133,6 @@
 
 									<div class="info">DOC, 1.03 Mb, 14.01.2021</div>
 								</div>
-
-								<button class="delete_btn">
-									<svg><use xlink:href="images/sprite.svg#ic_delete"></use></svg>
-
-									<span>Удалить файл</span>
-								</button>
 							</div>
 
 							<div class="item">
@@ -1159,12 +1147,6 @@
 
 									<div class="info">PDF, 2.36 Mb, 19.03.2018</div>
 								</div>
-
-								<button class="delete_btn">
-									<svg><use xlink:href="images/sprite.svg#ic_delete"></use></svg>
-
-									<span>Удалить файл</span>
-								</button>
 							</div>
 
 							<div class="item">
@@ -1179,12 +1161,6 @@
 
 									<div class="info">PDF, 4.27 Mb, 08.06.2020</div>
 								</div>
-
-								<button class="delete_btn">
-									<svg><use xlink:href="images/sprite.svg#ic_delete"></use></svg>
-
-									<span>Удалить файл</span>
-								</button>
 							</div>
 
 							<div class="item">
@@ -1199,12 +1175,76 @@
 
 									<div class="info">JPG, 2.36 Mb, 19.03.2018</div>
 								</div>
+							</div>
 
-								<button class="delete_btn">
-									<svg><use xlink:href="images/sprite.svg#ic_delete"></use></svg>
+							<div class="item">
+								<div class="icon">
+									<img src="images/ic_excel.svg" alt="" loading="lazy">
+								</div>
 
-									<span>Удалить файл</span>
-								</button>
+								<div>
+									<div class="name">
+										<a href="/">King size. Новинки 2019. Проспект</a>
+									</div>
+
+									<div class="info">XLS, 4.27 Mb, 08.06.2020</div>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="icon">
+									<img src="images/ic_word.svg" alt="" loading="lazy">
+								</div>
+
+								<div>
+									<div class="name">
+										<a href="/">Схема проезда на склад ТД Клинкер Хаус</a>
+									</div>
+
+									<div class="info">DOC, 1.03 Mb, 14.01.2021</div>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="icon">
+									<img src="images/ic_pdf.svg" alt="" loading="lazy">
+								</div>
+
+								<div>
+									<div class="name">
+										<a href="/">Полный каталог продукции STROEHER 2017-2018</a>
+									</div>
+
+									<div class="info">PDF, 2.36 Mb, 19.03.2018</div>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="icon">
+									<img src="images/ic_pdf.svg" alt="" loading="lazy">
+								</div>
+
+								<div>
+									<div class="name">
+										<a href="/">Проспект серии KONTUR (en)</a>
+									</div>
+
+									<div class="info">PDF, 4.27 Mb, 08.06.2020</div>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="icon">
+									<img src="images/ic_jpeg.svg" alt="" loading="lazy">
+								</div>
+
+								<div>
+									<div class="name">
+										<a href="/">Технические данные серии KONTUR CG (en)</a>
+									</div>
+
+									<div class="info">JPG, 2.36 Mb, 19.03.2018</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -1291,10 +1331,975 @@
 									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
 								</a></div>
 							</div>
+
+							<div class="filter_wrap">
+								<button class="mob_filter_close_btn">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_filter_close"></use></svg>
+								</button>
+
+								<div class="filter">
+									<form action="" class="form">
+										<div class="item">
+											<div class="name active">
+												<span>Цена, ₽</span>
+
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+											</div>
+
+											<div class="data range price_range" style="display: block;">
+												<div class="fields">
+													<input type="text" name="" value="0" class="input from">
+
+													<div class="sep"></div>
+
+													<input type="text" name="" value="1 105.98" class="input to">
+												</div>
+
+												<input type="hidden" id="price_range" name="price_range" value="">
+											</div>
+										</div>
+
+										<div class="item">
+											<div class="name active">
+												<span>Доступность</span>
+
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+											</div>
+
+											<div class="data" style="display: block;">
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="availability">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>В наличии</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="availability">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Под заказ</div>
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="item">
+											<div class="name active">
+												<span>Производитель</span>
+
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+											</div>
+
+											<div class="data" style="display: block;">
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="brand">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Engels</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="brand">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Feldhaus klinker</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="brand">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>King Klinker</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="brand">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>LHL (CRH) Klinker</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="brand">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>MUHR</div>
+													</label>
+												</div>
+
+												<div class="hide">
+													<div class="field">
+														<label class="checkbox">
+															<input type="checkbox" name="brand">
+
+															<div class="check">
+																<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+															</div>
+
+															<div>LHL (CRH) Klinker</div>
+														</label>
+													</div>
+
+													<div class="field">
+														<label class="checkbox">
+															<input type="checkbox" name="brand">
+
+															<div class="check">
+																<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+															</div>
+
+															<div>MUHR</div>
+														</label>
+													</div>
+												</div>
+
+												<button type="button" class="spoler_btn">
+													<span>Показать еще</span>
+													<span>Скрыть</span>
+												</button>
+											</div>
+										</div>
+
+										<div class="item">
+											<div class="name active">
+												<span>Страна</span>
+
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+											</div>
+
+											<div class="data" style="display: block;">
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="country">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Германия</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="country">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Голландия</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="country">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Италия</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="country">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Польша</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="country">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Россия</div>
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="item">
+											<div class="name active">
+												<span>Коллекция</span>
+
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+											</div>
+
+											<div class="data" style="display: block;">
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="collection">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>AROSA</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="collection">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Accudo</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="collection">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Antic Line (по старину)</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="collection">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>BRICKWERK</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="collection">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Bacco</div>
+													</label>
+												</div>
+
+												<div class="hide">
+													<div class="field">
+														<label class="checkbox">
+															<input type="checkbox" name="collection">
+
+															<div class="check">
+																<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+															</div>
+
+															<div>BRICKWERK</div>
+														</label>
+													</div>
+
+													<div class="field">
+														<label class="checkbox">
+															<input type="checkbox" name="collection">
+
+															<div class="check">
+																<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+															</div>
+
+															<div>Bacco</div>
+														</label>
+													</div>
+												</div>
+
+												<button type="button" class="spoler_btn">
+													<span>Показать еще</span>
+													<span>Скрыть</span>
+												</button>
+											</div>
+										</div>
+
+										<div class="item">
+											<div class="name active">
+												<span>Поверхность</span>
+
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+											</div>
+
+											<div class="data" style="display: block;">
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="surface">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Береста</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="surface">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Гладкая</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="surface">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Глазурованная</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="surface">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Лофт</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="surface">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Под старину</div>
+													</label>
+												</div>
+
+												<div class="hide">
+													<div class="field">
+														<label class="checkbox">
+															<input type="checkbox" name="surface">
+
+															<div class="check">
+																<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+															</div>
+
+															<div>BRICKWERK</div>
+														</label>
+													</div>
+
+													<div class="field">
+														<label class="checkbox">
+															<input type="checkbox" name="surface">
+
+															<div class="check">
+																<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+															</div>
+
+															<div>Bacco</div>
+														</label>
+													</div>
+												</div>
+
+												<button type="button" class="spoler_btn">
+													<span>Показать еще</span>
+													<span>Скрыть</span>
+												</button>
+											</div>
+										</div>
+
+										<div class="item">
+											<div class="name active">
+												<span>Цветовая гамма</span>
+
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+											</div>
+
+											<div class="data" style="display: block;">
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="color">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>
+															<img src="images/tmp/product_color1.svg" alt="" loading="lazy">
+															<span>Антрацит</span>
+														</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="color">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>
+															<img src="images/tmp/product_color2.svg" alt="" loading="lazy">
+															<span>Бежевая</span>
+														</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="color">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>
+															<img src="images/tmp/product_color3.svg" alt="" loading="lazy">
+															<span>Белая</span>
+														</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="color">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>
+															<img src="images/tmp/product_color4.svg" alt="" loading="lazy">
+															<span>Бордовая</span>
+														</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="color">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>
+															<img src="images/tmp/product_color5.svg" alt="" loading="lazy">
+															<span>Бронзовая</span>
+														</div>
+													</label>
+												</div>
+
+												<div class="hide">
+													<div class="field">
+														<label class="checkbox">
+															<input type="checkbox" name="color">
+
+															<div class="check">
+																<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+															</div>
+
+															<div>
+																<img src="images/tmp/product_color4.svg" alt="" loading="lazy">
+																<span>Бордовая</span>
+															</div>
+														</label>
+													</div>
+
+													<div class="field">
+														<label class="checkbox">
+															<input type="checkbox" name="color">
+
+															<div class="check">
+																<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+															</div>
+
+															<div>
+																<img src="images/tmp/product_color5.svg" alt="" loading="lazy">
+																<span>Бронзовая</span>
+															</div>
+														</label>
+													</div>
+												</div>
+
+												<button type="button" class="spoler_btn">
+													<span>Показать еще</span>
+													<span>Скрыть</span>
+												</button>
+											</div>
+										</div>
+
+										<div class="item">
+											<div class="name active">
+												<span>Тон</span>
+
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+											</div>
+
+											<div class="data" style="display: block;">
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="tone">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Однотонный</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="tone">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Пестрый</div>
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="item">
+											<div class="name active">
+												<span>Тип</span>
+
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+											</div>
+
+											<div class="data" style="display: block;">
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="type">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Галтованная плитка (срез кирпича)</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="type">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Глазурованная клинкерная плитка</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="type">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Клинкерная плитка длинного формата (ригель)</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="type">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Клинкерная плитка под кирпич</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="type">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Клинкерная плитка ручной формовки</div>
+													</label>
+												</div>
+
+												<div class="hide">
+													<div class="field">
+														<label class="checkbox">
+															<input type="checkbox" name="type">
+
+															<div class="check">
+																<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+															</div>
+
+															<div>Клинкерная плитка под кирпич</div>
+														</label>
+													</div>
+
+													<div class="field">
+														<label class="checkbox">
+															<input type="checkbox" name="type">
+
+															<div class="check">
+																<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+															</div>
+
+															<div>Клинкерная плитка ручной формовки</div>
+														</label>
+													</div>
+												</div>
+
+												<button type="button" class="spoler_btn">
+													<span>Показать еще</span>
+													<span>Скрыть</span>
+												</button>
+											</div>
+										</div>
+
+										<div class="item">
+											<div class="name active">
+												<span>Назначение</span>
+
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+											</div>
+
+											<div class="data" style="display: block;">
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="size">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Для фасадов / интерьеров</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="size">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Для фасадов / интерьеров / каминов</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="size">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Для фасадов / цоколей</div>
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="item">
+											<div class="name active">
+												<span>Формат/размер, мм</span>
+
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+											</div>
+
+											<div class="data" style="display: block;">
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="size">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>500x40x25</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="size">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>DF8 240x52x8</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="size">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>DF9 240x52x9</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="size">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>DF11 240x52x11</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="size">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>DF14 240x52x14</div>
+													</label>
+												</div>
+
+												<div class="hide">
+													<div class="field">
+														<label class="checkbox">
+															<input type="checkbox" name="size">
+
+															<div class="check">
+																<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+															</div>
+
+															<div>DF11 240x52x11</div>
+														</label>
+													</div>
+
+													<div class="field">
+														<label class="checkbox">
+															<input type="checkbox" name="size">
+
+															<div class="check">
+																<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+															</div>
+
+															<div>DF14 240x52x14</div>
+														</label>
+													</div>
+												</div>
+
+												<button type="button" class="spoler_btn">
+													<span>Показать еще</span>
+													<span>Скрыть</span>
+												</button>
+											</div>
+										</div>
+
+										<div class="item">
+											<div class="name active">
+												<span>Метка товара</span>
+
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+											</div>
+
+											<div class="data" style="display: block;">
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="sticker">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Акция</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="sticker">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Нет</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="sticker">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Новинка</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="sticker">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Распродажа</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="sticker">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Скидка</div>
+													</label>
+												</div>
+
+												<div class="hide">
+													<div class="field">
+														<label class="checkbox">
+															<input type="checkbox" name="sticker">
+
+															<div class="check">
+																<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+															</div>
+
+															<div>Распродажа</div>
+														</label>
+													</div>
+
+													<div class="field">
+														<label class="checkbox">
+															<input type="checkbox" name="sticker">
+
+															<div class="check">
+																<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+															</div>
+
+															<div>Скидка</div>
+														</label>
+													</div>
+												</div>
+
+												<button type="button" class="spoler_btn">
+													<span>Показать еще</span>
+													<span>Скрыть</span>
+												</button>
+											</div>
+										</div>
+
+										<div class="item">
+											<button type="submit" class="submit_btn">Показать</button>
+
+											<button type="reset" class="reset_btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_delete2"></use></svg>
+												<span>ОЧИСТИТЬ ФИЛЬТР</span>
+											</button>
+										</div>
+
+										<div class="result">
+											<div>Найдено товаров: <span>356</span></div>
+
+											<button type="button" class="show_btn">Показать</button>
+										</div>
+									</form>
+								</div>
+							</div>
 						</aside>
 
 
 						<section class="content">
+							<section class="products_head hide">
+								<button class="mob_filter_btn no_m">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_filter"></use></svg>
+									<span>Фильтр</span>
+								</button>
+							</section>
+
+
 							<section class="products">
 								<div class="row">
 									<div class="product">

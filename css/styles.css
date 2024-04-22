@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
 
-    scroll-margin-top: 24px;
+    scroll-margin-top: 160px;
 }
 
 *:before,
@@ -1798,7 +1798,7 @@ header.fixed .btns .btn .icon + *
 .mob_header
 {
     position: sticky;
-    z-index: 102;
+    z-index: 90;
     top: 0;
     left: 0;
 
@@ -2413,7 +2413,7 @@ header.fixed .btns .btn .icon + *
 .mob_menu
 {
     position: fixed;
-    z-index: 101;
+    z-index: 80;
     top: 0;
     right: 100%;
 
@@ -2770,43 +2770,6 @@ aside
 
 
 
-aside .mob_filter_close_btn
-{
-    position: absolute;
-    top: 0;
-    left: 100%;
-
-    display: none;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    width: 44px;
-    height: 44px;
-
-    color: #4a7ecb;
-    border-radius: 0 3px 3px 0;
-    background: #f6f6f6;
-}
-
-
-aside .mob_filter_close_btn .icon
-{
-    display: block;
-
-    width: 20px;
-    height: 20px;
-}
-
-
-aside.show .mob_filter_close_btn
-{
-    display: flex;
-}
-
-
-
 aside .links
 {
     padding: 16px 0;
@@ -2938,6 +2901,51 @@ aside .banner img
 /*------------
     Filter
 ------------*/
+* + .filter_wrap
+{
+    position: relative;
+
+    margin-top: 20px;
+}
+
+
+.filter_wrap .mob_filter_close_btn
+{
+    position: absolute;
+    top: 0;
+    left: 100%;
+
+    display: none;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    color: #4a7ecb;
+    border-radius: 0 3px 3px 0;
+    background: #f6f6f6;
+}
+
+
+.filter_wrap .mob_filter_close_btn .icon
+{
+    display: block;
+
+    width: 20px;
+    height: 20px;
+}
+
+
+.filter_wrap.show .mob_filter_close_btn
+{
+    display: flex;
+}
+
+
+
 .filter
 {
     position: relative;
@@ -3077,6 +3085,15 @@ aside .banner img
 .filter .spoler_btn.active span + span
 {
     display: inline;
+}
+
+
+.filter .submit_btn
+{
+    display: none;
+
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 
@@ -3462,6 +3479,12 @@ aside .banner img
 .form .line
 {
     margin-bottom: 24px;
+}
+
+
+.form .line.hide
+{
+    display: none;
 }
 
 
@@ -4569,7 +4592,30 @@ aside .banner img
 }
 
 
-.main_slider .img
+.main_slider .link
+{
+    display: block;
+
+    text-decoration: none;
+
+    color: currentColor;
+}
+
+
+.main_slider .link img
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    height: 400px;
+
+    object-fit: cover;
+    object-position: 0 50%;
+}
+
+
+/* .main_slider .img
 {
     position: absolute;
     z-index: 1;
@@ -4665,7 +4711,7 @@ aside .banner img
     margin-top: 26px;
 
     color: #ddd;
-}
+} */
 
 
 
@@ -6177,6 +6223,19 @@ aside .banner img
 }
 
 
+.files .list.row
+{
+    align-content: stretch;
+    align-items: stretch;
+}
+
+
+.files .list.row > *
+{
+    width: 50%;
+}
+
+
 .files .item
 {
     display: flex;
@@ -6202,7 +6261,7 @@ aside .banner img
 }
 
 
-.files .item + .item
+.files .item:nth-child(2) ~ .item
 {
     margin-top: -1px;
 }
@@ -6233,7 +6292,7 @@ aside .banner img
 
 .files .item .icon + *
 {
-    width: calc(100% - 84px);
+    width: calc(100% - 42px);
 }
 
 
@@ -6263,69 +6322,6 @@ aside .banner img
     line-height: 20px;
 
     color: #7b7b7b;
-}
-
-
-.files .item .delete_btn
-{
-    position: relative;
-
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    margin-left: auto;
-
-    transition: color .2s linear;
-
-    color: #acacac;
-}
-
-
-.files .item .delete_btn svg
-{
-    display: block;
-
-    width: 22px;
-    height: 24px;
-}
-
-
-.files .item .delete_btn span
-{
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 20px;
-
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-
-    display: none;
-
-    margin-bottom: 8px;
-    padding: 5px 10px;
-
-    transform: translateX(-50%);
-    white-space: nowrap;
-    pointer-events: none;
-
-    color: #7b7b7b;
-    border-radius: 3px;
-    background: #ececec;
-}
-
-
-.files .item .delete_btn:hover
-{
-    color: #930000;
-}
-
-.files .item .delete_btn:hover span
-{
-    display: block;
 }
 
 
@@ -7883,6 +7879,7 @@ aside .banner img
     align-content: stretch;
     align-items: stretch;
 
+    margin-top: 20px;
     margin-bottom: -20px;
     margin-left: -20px;
 }
@@ -9995,32 +9992,6 @@ aside .banner img
 }
 
 
-.checkout_info .invoice_btn
-{
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 20px;
-
-    display: block;
-
-    margin-left: auto;
-    padding: 11px 13px;
-
-    transition: .2s linear;
-
-    color: #930000;
-    border: 1px solid #930000;
-    border-radius: 3px;
-}
-
-
-.checkout_info .invoice_btn:hover
-{
-    color: #fff;
-    background: #930000;
-}
-
-
 
 /*------------------------
     LK info - Personal
@@ -10106,19 +10077,93 @@ aside .banner img
 }
 
 
-.lk_info .personal .btns
+.lk_info .personal .company
 {
     display: flex;
-    align-content: center;
-    align-items: center;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 18px;
+}
+
+
+.lk_info .personal .company .icon
+{
+    display: block;
+
+    width: 20px;
+    height: 18px;
+    margin-right: 10px;
+
+    color: #930000;
+}
+
+
+.lk_info .personal .company .icon + *
+{
+    width: calc(100% - 30px);
+}
+
+
+.lk_info .personal .company .label
+{
+    font-weight: 600;
+    line-height: 22px;
+}
+
+
+.lk_info .personal .company .val
+{
+    font-weight: 500;
+    line-height: 22px;
+
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
     justify-content: flex-start;
 
+    margin-left: -12px;
+}
+
+
+.lk_info .personal .company .val > *
+{
+    margin-left: 12px;
+}
+
+
+.lk_info .personal .company .sep
+{
+    align-self: center;
+
+    width: 1px;
+    height: 14px;
+
+    background: #ddd;
+}
+
+
+.lk_info .personal .btns
+{
     width: 250px;
     max-width: 100%;
-    padding: 20px 30px;
 
     border-left: 1px solid #ececec;
+}
+
+
+.lk_info .personal .btns > *
+{
+    padding: 30px;
+}
+
+
+.lk_info .personal .btns > * + *
+{
+    border-top: 1px solid #ececec;
 }
 
 
@@ -10139,6 +10184,7 @@ aside .banner img
     transition: color .2s linear;
     text-align: left;
     white-space: nowrap;
+    text-decoration: none;
 
     color: #4a7ecb;
 }
@@ -10571,6 +10617,11 @@ aside .banner img
     justify-content: flex-start;
 
     margin-bottom: 20px;
+}
+
+.products_head.hide
+{
+    display: none;
 }
 
 

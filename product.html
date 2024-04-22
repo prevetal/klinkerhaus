@@ -1349,7 +1349,7 @@
 									</div>
 								</div>
 
-								<button class="btn scroll_btn description_btn">Перейти к описанию</button>
+								<button class="btn scroll_btn description_btn" data-anchor="product_tab1">Перейти к описанию</button>
 							</div>
 
 							<div class="section bottom">
@@ -1411,7 +1411,7 @@
 										<svg class="icon"><use xlink:href="images/sprite.svg#ic_minus"></use></svg>
 									</button>
 
-									<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+									<input type="text" value="1" class="input" data-minimum="1" data-maximum="9999999" data-step="1" data-unit="" maxlength="7">
 
 									<button type="button" class="btn plus">
 										<svg class="icon"><use xlink:href="images/sprite.svg#ic_plus"></use></svg>
@@ -1444,36 +1444,42 @@
 									<span>В КОРЗИНЕ</span>
 								</button>
 
-								<button class="quike_buy_btn">КУПИТЬ В 1 КЛИК</button>
+								<button class="quike_buy_btn modal_btn" data-modal="quike_buy_modal">КУПИТЬ В 1 КЛИК</button>
 							</div>
 
 							<div class="section small_pad additional_info bottom">
-								<button class="btn">
+								<button class="btn modal_btn" data-modal="order_sample_modal">
 									<svg class="icon"><use xlink:href="images/sprite.svg#ic_sample"></use></svg>
 									<span>Заказать образец</span>
 								</button>
 							</div>
 
 							<div class="section small_pad additional_info row">
-								<button class="btn">
+								<button class="btn modal_btn" data-modal="delivery_calc_modal">
 									<svg class="icon"><use xlink:href="images/sprite.svg#ic_calc"></use></svg>
-									<span>Рассчет доставки</span>
+									<span>Расчёт доставки</span>
 								</button>
 
-								<button class="btn">Помощь в рассчете</button>
+								<button class="btn modal_btn" data-modal="product_calc_modal">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_calc"></use></svg>
+									<span>Расчёт товара</span>
+								</button>
 							</div>
 
 							<div class="section small_pad additional_info row">
-								<button class="btn">
+								<button class="btn modal_btn" data-modal="found_cheaper_modal">
 									<svg class="icon"><use xlink:href="images/sprite.svg#ic_cheaper"></use></svg>
 									<span>Нашли дешевле?</span>
 								</button>
 
-								<button class="btn">VIP цена</button>
+								<button class="btn modal_btn" data-modal="vip_price_modal">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_cheaper"></use></svg>
+									<span>VIP цена</span>
+								</button>
 							</div>
 
 							<div class="section small_pad additional_info">
-								<button class="btn">
+								<button class="btn modal_btn" data-modal="support_modal">
 									<svg class="icon"><use xlink:href="images/sprite.svg#ic_support"></use></svg>
 									<span>Отдел продаж</span>
 								</button>
@@ -1733,7 +1739,7 @@
 													<svg class="icon"><use xlink:href="images/sprite.svg#ic_minus"></use></svg>
 												</button>
 
-												<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+												<input type="text" value="1" class="input" data-minimum="1" data-maximum="9999999" data-step="1" data-unit="" maxlength="7">
 
 												<button type="button" class="btn plus">
 													<svg class="icon"><use xlink:href="images/sprite.svg#ic_plus"></use></svg>
@@ -1877,7 +1883,7 @@
 													<svg class="icon"><use xlink:href="images/sprite.svg#ic_minus"></use></svg>
 												</button>
 
-												<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+												<input type="text" value="1" class="input" data-minimum="1" data-maximum="9999999" data-step="1" data-unit="" maxlength="7">
 
 												<button type="button" class="btn plus">
 													<svg class="icon"><use xlink:href="images/sprite.svg#ic_plus"></use></svg>
@@ -2016,7 +2022,7 @@
 													<svg class="icon"><use xlink:href="images/sprite.svg#ic_minus"></use></svg>
 												</button>
 
-												<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+												<input type="text" value="1" class="input" data-minimum="1" data-maximum="9999999" data-step="1" data-unit="" maxlength="7">
 
 												<button type="button" class="btn plus">
 													<svg class="icon"><use xlink:href="images/sprite.svg#ic_plus"></use></svg>
@@ -4673,6 +4679,336 @@
 
 				<div><button class="btn border close_btn">ПРОДОЛЖИТЬ ПОКУПКИ</button></div>
 			</div>
+		</section>
+
+
+		<section class="modal" id="order_sample_modal">
+			<div class="modal_title">Заказать образец</div>
+
+			<div class="modal_desc">Напишите нам и наши специалисты помогут получить исчерпывающую информацию в самое короткое время.</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="text" name="" value="" class="input" placeholder="Ваши ФИО *">
+
+						<svg class="error_icon"><use xlink:href="images/sprite.svg#ic_warning"></use></svg>
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="tel" name="" value="" class="input" placeholder="Телефон *">
+
+						<svg class="error_icon"><use xlink:href="images/sprite.svg#ic_warning"></use></svg>
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="email" name="" value="" class="input" placeholder="E-mail *">
+
+						<svg class="error_icon"><use xlink:href="images/sprite.svg#ic_warning"></use></svg>
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<textarea name="" class="big_h" placeholder="Сообщение"></textarea>
+
+						<svg class="error_icon"><use xlink:href="images/sprite.svg#ic_warning"></use></svg>
+					</div>
+				</div>
+
+				<div class="line exp">* — обязательные для заполнения поля.</div>
+
+				<div class="line captcha">
+					<img src="images/tmp/captcha_img.png" alt="">
+				</div>
+
+				<div class="line agree">
+					Нажимая на кнопку «Отправить заявку», я подтверждаю согласие на <a href="/" target="_blank">обработку персональных данных</a>.
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">Отправить заявку</button>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="delivery_calc_modal">
+			<div class="modal_title">Расчёт доставки</div>
+
+			<div class="modal_desc">Напишите нам и наши специалисты помогут получить исчерпывающую информацию в самое короткое время.</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="text" name="" value="" class="input" placeholder="Ваши ФИО *">
+
+						<svg class="error_icon"><use xlink:href="images/sprite.svg#ic_warning"></use></svg>
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="tel" name="" value="" class="input" placeholder="Телефон *">
+
+						<svg class="error_icon"><use xlink:href="images/sprite.svg#ic_warning"></use></svg>
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="email" name="" value="" class="input" placeholder="E-mail *">
+
+						<svg class="error_icon"><use xlink:href="images/sprite.svg#ic_warning"></use></svg>
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<textarea name="" class="big_h" placeholder="Сообщение"></textarea>
+
+						<svg class="error_icon"><use xlink:href="images/sprite.svg#ic_warning"></use></svg>
+					</div>
+				</div>
+
+				<div class="line exp">* — обязательные для заполнения поля.</div>
+
+				<div class="line captcha">
+					<img src="images/tmp/captcha_img.png" alt="">
+				</div>
+
+				<div class="line agree">
+					Нажимая на кнопку «Отправить заявку», я подтверждаю согласие на <a href="/" target="_blank">обработку персональных данных</a>.
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">Отправить заявку</button>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="product_calc_modal">
+			<div class="modal_title">Расчёт материалов</div>
+
+			<div class="modal_desc">Напишите нам и наши специалисты помогут получить исчерпывающую информацию в самое короткое время.</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="text" name="" value="" class="input" placeholder="Ваши ФИО *">
+
+						<svg class="error_icon"><use xlink:href="images/sprite.svg#ic_warning"></use></svg>
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="tel" name="" value="" class="input" placeholder="Телефон *">
+
+						<svg class="error_icon"><use xlink:href="images/sprite.svg#ic_warning"></use></svg>
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="email" name="" value="" class="input" placeholder="E-mail *">
+
+						<svg class="error_icon"><use xlink:href="images/sprite.svg#ic_warning"></use></svg>
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<textarea name="" class="big_h" placeholder="Сообщение"></textarea>
+
+						<svg class="error_icon"><use xlink:href="images/sprite.svg#ic_warning"></use></svg>
+					</div>
+				</div>
+
+				<div class="line exp">* — обязательные для заполнения поля.</div>
+
+				<div class="line captcha">
+					<img src="images/tmp/captcha_img.png" alt="">
+				</div>
+
+				<div class="line agree">
+					Нажимая на кнопку «Отправить заявку», я подтверждаю согласие на <a href="/" target="_blank">обработку персональных данных</a>.
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">Отправить заявку</button>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="found_cheaper_modal">
+			<div class="modal_title">Нашли дешевле?</div>
+
+			<div class="modal_desc">Напишите нам и наши специалисты помогут получить исчерпывающую информацию в самое короткое время.</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="text" name="" value="" class="input" placeholder="Ваши ФИО *">
+
+						<svg class="error_icon"><use xlink:href="images/sprite.svg#ic_warning"></use></svg>
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="tel" name="" value="" class="input" placeholder="Телефон *">
+
+						<svg class="error_icon"><use xlink:href="images/sprite.svg#ic_warning"></use></svg>
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="email" name="" value="" class="input" placeholder="E-mail *">
+
+						<svg class="error_icon"><use xlink:href="images/sprite.svg#ic_warning"></use></svg>
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<textarea name="" class="big_h" placeholder="Сообщение"></textarea>
+
+						<svg class="error_icon"><use xlink:href="images/sprite.svg#ic_warning"></use></svg>
+					</div>
+				</div>
+
+				<div class="line exp">* — обязательные для заполнения поля.</div>
+
+				<div class="line captcha">
+					<img src="images/tmp/captcha_img.png" alt="">
+				</div>
+
+				<div class="line agree">
+					Нажимая на кнопку «Отправить заявку», я подтверждаю согласие на <a href="/" target="_blank">обработку персональных данных</a>.
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">Отправить заявку</button>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="vip_price_modal">
+			<div class="modal_title">VIP цена</div>
+
+			<div class="modal_desc">Напишите нам и наши специалисты помогут получить исчерпывающую информацию в самое короткое время.</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="text" name="" value="" class="input" placeholder="Ваши ФИО *">
+
+						<svg class="error_icon"><use xlink:href="images/sprite.svg#ic_warning"></use></svg>
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="tel" name="" value="" class="input" placeholder="Телефон *">
+
+						<svg class="error_icon"><use xlink:href="images/sprite.svg#ic_warning"></use></svg>
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="email" name="" value="" class="input" placeholder="E-mail *">
+
+						<svg class="error_icon"><use xlink:href="images/sprite.svg#ic_warning"></use></svg>
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<textarea name="" class="big_h" placeholder="Сообщение"></textarea>
+
+						<svg class="error_icon"><use xlink:href="images/sprite.svg#ic_warning"></use></svg>
+					</div>
+				</div>
+
+				<div class="line exp">* — обязательные для заполнения поля.</div>
+
+				<div class="line captcha">
+					<img src="images/tmp/captcha_img.png" alt="">
+				</div>
+
+				<div class="line agree">
+					Нажимая на кнопку «Отправить заявку», я подтверждаю согласие на <a href="/" target="_blank">обработку персональных данных</a>.
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">Отправить заявку</button>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="quike_buy_modal">
+			<div class="modal_title">Купить в 1 клик</div>
+
+			<div class="modal_desc">Напишите нам и наши специалисты помогут получить исчерпывающую информацию в самое короткое время.</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="text" name="" value="" class="input" placeholder="Ваши ФИО *">
+
+						<svg class="error_icon"><use xlink:href="images/sprite.svg#ic_warning"></use></svg>
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="tel" name="" value="" class="input" placeholder="Телефон *">
+
+						<svg class="error_icon"><use xlink:href="images/sprite.svg#ic_warning"></use></svg>
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="email" name="" value="" class="input" placeholder="E-mail *">
+
+						<svg class="error_icon"><use xlink:href="images/sprite.svg#ic_warning"></use></svg>
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<textarea name="" class="big_h" placeholder="Сообщение"></textarea>
+
+						<svg class="error_icon"><use xlink:href="images/sprite.svg#ic_warning"></use></svg>
+					</div>
+				</div>
+
+				<div class="line exp">* — обязательные для заполнения поля.</div>
+
+				<div class="line captcha">
+					<img src="images/tmp/captcha_img.png" alt="">
+				</div>
+
+				<div class="line agree">
+					Нажимая на кнопку «Отправить заявку», я подтверждаю согласие на <a href="/" target="_blank">обработку персональных данных</a>.
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">Отправить заявку</button>
+				</div>
+			</form>
 		</section>
 
 

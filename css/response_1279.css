@@ -251,30 +251,6 @@
     }
 
 
-    aside.mob_hide
-    {
-        position: fixed;
-        z-index: 101;
-        top: 0;
-        right: 100%;
-
-        width: 304px;
-        height: 100%;
-        min-height: -moz-available;
-        min-height: -webkit-fill-available;
-        min-height:         fill-available;
-        margin: 0;
-        padding: 0;
-
-        transition: transform .3s linear;
-    }
-
-    aside.show
-    {
-        transform: translateX(100%);
-    }
-
-
     aside .links
     {
         display: flex;
@@ -310,6 +286,30 @@
     /*------------
         Filter
     ------------*/
+    .filter_wrap
+    {
+        position: fixed;
+        z-index: 102;
+        top: 0;
+        right: 100%;
+
+        width: 304px;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+        padding: 0;
+
+        transition: transform .3s linear;
+    }
+
+    .filter_wrap.show
+    {
+        transform: translateX(100%);
+    }
+
+
     .filter
     {
         overflow: auto;
@@ -322,6 +322,12 @@
         border-radius: 0;
 
         overscroll-behavior-y: contain;
+    }
+
+
+    .filter .submit_btn
+    {
+        display: block;
     }
 
 
@@ -1231,12 +1237,6 @@
     }
 
 
-    .checkout_info .invoice_btn
-    {
-        margin-left: 20px;
-    }
-
-
 
     /*-----------------------
         Dealer department
@@ -1280,6 +1280,12 @@
     /*-------------------
         Products head
     -------------------*/
+    .products_head.hide
+    {
+        display: flex;
+    }
+
+
     .products_head .mob_filter_btn
     {
         display: flex;
@@ -1399,6 +1405,22 @@
     {
         column-gap: 20px;
         column-count: 2;
+    }
+
+
+
+    /*------------------------
+        LK info - Personal
+    ------------------------*/
+    .lk_info .personal .company .address
+    {
+        width: 100%;
+    }
+
+
+    .lk_info .personal .company .address + .sep
+    {
+        display: none;
     }
 
 

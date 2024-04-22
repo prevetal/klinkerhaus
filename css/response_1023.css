@@ -103,7 +103,8 @@
     }
 
 
-    header
+    header,
+    header.fixed
     {
         position: fixed;
         z-index: 101;
@@ -120,8 +121,10 @@
 
         transition: transform .3s linear;
         transform: translateX(-100%);
+        animation: none;
 
         background: #fff;
+        box-shadow: none;
     }
 
     header.show
@@ -168,6 +171,12 @@
     /*-------------
         Sidebar
     -------------*/
+    aside.mob_no_m
+    {
+        margin-bottom: 0;
+    }
+
+
     aside .links a
     {
         line-height: 17px;
@@ -1074,6 +1083,22 @@
     .about_info .data .desc
     {
         margin-bottom: 20px;
+    }
+
+
+
+    /*-----------
+        Files
+    -----------*/
+    .files .list.row > *
+    {
+        width: 100%;
+    }
+
+
+    .files .item:nth-child(1) ~ .item
+    {
+        margin-top: -1px;
     }
 
 

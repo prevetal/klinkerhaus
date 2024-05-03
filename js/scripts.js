@@ -984,6 +984,16 @@ document.addEventListener('DOMContentLoaded', function () {
 			form.find('.reg_type2').fadeIn(300)
 		}
 	})
+
+
+	// Catalog spolers
+	if (WW < 1024) {
+		$('.categories .category .sub .title').removeClass('active')
+		$('.categories .category .sub .list').hide()
+	} else {
+		$('.categories .category .sub .title').addClass('active')
+		$('.categories .category .sub .list').show()
+	}
 })
 
 
@@ -1036,12 +1046,24 @@ window.addEventListener('resize', function () {
 		WW = window.innerWidth || document.clientWidth || document.getElementsByTagName('body')[0].clientWidth
 
 
-		// Align elements in the grid
-		document.querySelectorAll('.categories .grid').forEach(el => {
-			let styles = getComputedStyle(el)
+		// Catalog spolers
+		if (WW < 1024) {
+			$('.categories .category .sub .title').removeClass('active')
+			$('.categories .category .sub .list').hide()
+		} else {
+			$('.categories .category .sub .title').addClass('active')
+			$('.categories .category .sub .list').show()
+		}
 
-			categoriesHeight(el, parseInt(styles.getPropertyValue('--count')))
-		})
+
+		// Align elements in the grid
+		setTimeout(() => {
+			document.querySelectorAll('.categories .grid').forEach(el => {
+				let styles = getComputedStyle(el)
+
+				categoriesHeight(el, parseInt(styles.getPropertyValue('--count')))
+			})
+		}, 500)
 
 
 		// Fix. header

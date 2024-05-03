@@ -983,4 +983,14 @@
         width: auto;
         min-width: 112px;
     }
+
+
+
+    /*---------------------
+        PopUp - Support
+    ---------------------*/
+    #support_modal .desc
+    {
+        width: 300px;
+    }
 }

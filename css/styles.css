@@ -5210,6 +5210,8 @@ aside .banner img
     font-weight: 500;
     line-height: 20px;
 
+    display: none;
+
     padding-top: 10px;
 
     color: #4a7ecb;
@@ -6241,7 +6243,7 @@ aside .banner img
     display: flex;
     align-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: flex-start;
 
     padding: 10px 10px 10px 0;
@@ -6292,7 +6294,7 @@ aside .banner img
 
 .files .item .icon + *
 {
-    width: calc(100% - 42px);
+    width: 100%;
 }
 
 
@@ -6322,6 +6324,69 @@ aside .banner img
     line-height: 20px;
 
     color: #7b7b7b;
+}
+
+
+.files .item .delete_btn
+{
+    position: relative;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-left: 10px;
+
+    transition: color .2s linear;
+
+    color: #acacac;
+}
+
+
+.files .item .delete_btn svg
+{
+    display: block;
+
+    width: 22px;
+    height: 24px;
+}
+
+
+.files .item .delete_btn span
+{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+
+    display: none;
+
+    margin-bottom: 8px;
+    padding: 5px 10px;
+
+    transform: translateX(-50%);
+    white-space: nowrap;
+    pointer-events: none;
+
+    color: #7b7b7b;
+    border-radius: 3px;
+    background: #ececec;
+}
+
+
+.files .item .delete_btn:hover
+{
+    color: #930000;
+}
+
+.files .item .delete_btn:hover span
+{
+    display: block;
 }
 
 
@@ -14123,4 +14188,84 @@ footer .exp
     text-decoration: line-through;
 
     color: #d71b1b;
+}
+
+
+
+/*---------------------
+    PopUp - Support
+---------------------*/
+#support_modal
+{
+    padding: 40px 30px;
+
+    text-align: center;
+}
+
+
+#support_modal .title
+{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+
+    margin-bottom: 8px;
+}
+
+
+#support_modal .desc
+{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+
+    width: 322px;
+    margin: 0 auto;
+}
+
+
+#support_modal .phone
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-top: 20px;
+}
+
+
+#support_modal .phone .icon
+{
+    display: block;
+
+    width: 20px;
+    height: 21px;
+    margin-right: 12px;
+
+    color: #930000;
+}
+
+
+#support_modal .phone a
+{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+
+    white-space: nowrap;
+    text-decoration: none;
+
+    color: var(--blue, #4a7ecb);
+}
+
+
+#support_modal .time
+{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+
+    margin-top: 10px;
 }

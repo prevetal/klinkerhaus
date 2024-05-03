@@ -1069,6 +1069,13 @@
     }
 
 
+    .categories .category .name,
+    .categories .category .desc
+    {
+        height: auto !important;
+    }
+
+
     .categories .category .sub .columns
     {
         column-gap: 20px;

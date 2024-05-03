@@ -994,6 +994,16 @@ document.addEventListener('DOMContentLoaded', function () {
 		$('.categories .category .sub .title').addClass('active')
 		$('.categories .category .sub .list').show()
 	}
+
+
+	// Category spolers
+	if (WW < 1024) {
+		$('.category_info .sub .title').removeClass('active')
+		$('.category_info .sub .list').hide()
+	} else {
+		$('.category_info .sub .title').addClass('active')
+		$('.category_info .sub .list').show()
+	}
 })
 
 
@@ -1053,6 +1063,16 @@ window.addEventListener('resize', function () {
 		} else {
 			$('.categories .category .sub .title').addClass('active')
 			$('.categories .category .sub .list').show()
+		}
+
+
+		// Category spolers
+		if (WW < 1024) {
+			$('.category_info .sub .title').removeClass('active')
+			$('.category_info .sub .list').hide()
+		} else {
+			$('.category_info .sub .title').addClass('active')
+			$('.category_info .sub .list').show()
 		}
 
 

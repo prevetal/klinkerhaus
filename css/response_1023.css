@@ -426,7 +426,8 @@
     }
 
 
-    .products .product .buy_btn
+    .products .product .buy_btn,
+    .products .product .buy_btn.request_btn
     {
         justify-content: center;
 
